@@ -1,0 +1,71 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+int main()
+{
+    int a,n,m,i,y,on=0,th=0,tw=0,fo=0,fi=0,si=0,se=0,ei=0,ni=0,ze=0;
+    printf("Please enter the number:\n");
+    scanf("%d",&a);
+    n=fabs(a);
+    for(m=n,i=0;m>0;i++)
+    {
+        y=m%10;
+        m=m/10;
+        switch(y)
+        {
+            case 0:ze=ze+1;break;
+            case 1:on=on+1;break;
+            case 2:tw=tw+1;break;
+            case 3:th+=1;break;
+            case 4:fo+=1;break;
+            case 5:fi+=1;break;
+            case 6:si+=1;break;
+            case 7:se+=1;break;
+            case 8:ei+=1;break;
+            case 9:ni+=1;break;
+            break;
+        }
+    }
+    printf("%d: %d bits\n",a,i);
+    if(ze!=0)
+    {
+        printf("0: %d\n",ze);
+    }
+    if(on!=0)
+    {
+        printf("1: %d\n",on);
+    }
+    if(tw!=0)
+    {
+        printf("2: %d\n",tw);
+    }
+    if(th!=0)
+    {
+        printf("3: %d\n",th);
+    }
+    if(fo!=0)
+    {
+        printf("4: %d\n",fo);
+    }
+    if(fi!=0)
+    {
+        printf("5: %d\n",fi);
+    }
+    if(si!=0)
+    {
+        printf("6: %d\n",si);
+    }
+    if(se!=0)
+    {
+        printf("7: %d\n",se);
+    }
+    if(ei!=0)
+    {
+        printf("8: %d\n",ei);
+    }
+    if(ni!=0)
+    {
+        printf("9: %d\n",ni);
+    }
+    return 0;
+}
